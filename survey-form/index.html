@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Monster Survey Form</h1>
+    <p id="description">Fill out the form to complete the monster setup.</p>
+  </header>
+  <section>
+    <form id="survey-form">
+      <h3>Tell us more about your monster: </h3>
+      <fieldset>
+        <h4>Contact: </h4>
+        <label id="name-label" for="name">Monster's Name: <br><input id="name" type="text" placeholder="Kora"  class="contacts"
+            required></label>
+        <label id="email-label" for="email">False Email:  <br><input id="email" type="email" placeholder="Kora@kora.kora"  class="contacts"
+            required></label>
+        <label id="number-label" for="number" >Favorite Number:  <br><input id="number" type="number" placeholder="123" min="0"  class="contacts"
+            max="999" required></label>
+      </fieldset>
+      <fieldset>
+        <h4>Preferences</h4>
+        <div class="left-side">
+        <h5 >Select a soup:</h5><label>
+          <select id="dropdown"  >
+            <option>Select</option>
+            <option>Chicken Noodle</option>
+            <option>Split Pea</option>
+          </select></label></div>
+          <div class="right-side">
+          <h5 >Select a companion:</h5>
+        <label><input class="right-side" type="radio" value="cats" name="pets"> Cats</label>
+        <label><input  class="right-side" type="radio" value="dogs" name="pets"> Dogs</label></div>
+      </fieldset>
+      <fieldset>
+        <h4>Backstory</h4>
+        <label>
+          <h5>Share their story:</h5>
+          <textarea rows="4" cols="200">
+        </textarea></label>
+        <div class="adventure">
+        <h5>Let's get ready to begin the adventure...</h5>
+        <label for="yes">Are you ready?<input type="checkbox"  value="yes"></label>
+        <label for="no"> Shall we start?<input type="checkbox" value="no"></label>
+        </label></div>
+        <input id="submit" type="submit" value="START">
+      </fieldset>
+    </form>
+  </section>
+<footer>
+  <p id="footer" class="footer-id left-side">This project is based on freeCodeCamp's survey form instructions.</p>
+  <p class="footer-id right-side">Designed & Developed by Kyra N.</p>
+   <p class="footer-id right-side">Est. 2022</p>
+</footer>
+</body>
+
+</html>

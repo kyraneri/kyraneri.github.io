@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #382C1E;
+    color: #382C1E;
+}
+
+header, section {
+    background-color: #5D9B9B;
+    margin: 15px auto;
+    padding: 10px;
+    max-width: 800px;
+    border-left: 3px dotted #F8F4E3;
+    border-right: 3px dotted #F8F4E3;
+}
+
+h1, header>p {
+    margin: 0 auto;
+    text-align: center;
+    color: #F8F4E3;
+}
+
+h4 {
+    background-color: #5D9B9B;
+    display: block;
+    width: 25%;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+h1, h3, h4, h5, p, label{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    border: none;
+}
+
+h3, h4, h5, label {
+    font-weight: 500;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+form { 
+    max-width: 800px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    border-top: 1px solid #F8F4E3;
+    padding: 0;
+}
+
+label {
+    display: block;
+    margin: 0.5rem;
+    font-size: 14px;
+}
+
+textarea {
+    width: 100%;
+    margin: 2px auto;
+}
+
+
+
+input, option, textarea, select {
+    background-color: #F8F4E3;
+}
+
+input[type="submit"] {
+    background-color: #F8F4E3;
+    border-color: #F8F4E3;
+    display: block;
+    padding: 4px 10px;
+    height: 50px;
+    width: 110px;
+    margin: 0 auto;
+    color: #931D27;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 15px;
+}
+input[type="submit"]:hover {
+    background-color: #931D27;
+    border-color: #931D27;
+    display: block;
+    margin: 0 auto;
+    padding: 4px 10px;
+    color: #382C1E;
+}
+
+.left-side {
+    float: left;
+    border-right: 1px solid #382C1E;
+}
+
+.left-side, .right-side {
+    width: 49%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.left-side > label, .left-side > h5, .right-side > label, .right-side > h5 {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.right-side {
+    float: right;
+}
+
+.adventure > label {
+    display: inline;
+    margin: 0 auto;
+}
+
+footer {
+    min-height: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #382C1E;
+    color: #F8F4E3;
+}
+
+footer > .left-side, footer > .right-side {
+    font-size: 10px;
+    padding-bottom: 0 !important;
+}
+
+footer > .left-side {
+    width: 54%;
+}
+
+footer > .right-side {
+    width: 40%;
+    border-left: 1px dotted #F8F4E3;
+    padding-left: 15px;
+}

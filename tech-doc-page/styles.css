@@ -1,0 +1,171 @@
+/* body */
+html,
+body {
+    margin: 0 auto;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+/* header */
+h1, #header-child {
+    margin: 0 15%;
+}
+h1 {
+    padding-top: 15px;
+}
+#header-child {
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+#navbar {
+    float: left;
+    margin: 0 auto;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    height: 100%;
+    border-right: 3px solid rgb(92, 89, 89);
+}
+
+#navbar li {
+    padding: 8px 30px;
+}
+#navbar header {
+    padding-top: 50px;
+}
+#navbar header,
+#main-doc header {
+    font-weight: bold;
+    margin: 5px;
+}
+
+#navbar a {
+    display: block;
+}
+
+#navbar ul {
+    padding: 0;
+}
+
+#navbar li:hover {
+    background-color: rgb(92, 89, 89);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+
+/* main content */
+#main-doc {
+    float: right;
+    margin: 0 auto;
+    width: 85%;
+}
+
+#main-doc header {
+    font-size: 22px;
+
+}
+
+
+section p {
+    margin-left: 5px;
+    line-height: 120%;
+}
+
+#main-doc li {
+    padding: 10px;
+    margin-right: 50%;
+    margin-top: 4px;
+}
+
+#main-doc ul :not(:first-child) {
+    background-color: rgb(251, 255, 199);
+    font-weight: 600;
+}
+
+.jsstring {
+    color: rgb(148, 6, 6);
+}
+
+.jsproperty {
+    color: rgb(27, 24, 165);
+}
+
+footer {
+    float: right;
+}
+footer a {
+    text-decoration: underline;
+}
+
+@media (max-width: 1705px) and (min-width: 1015px) {
+    html, body {
+        margin: 0 auto;
+        width: 100%;
+    }
+    #navbar {
+        border-right: 2px solid rgb(92, 89, 89);
+    }
+    #navbar li {
+        padding: 2px 20px;
+    }
+    #navbar header {
+        padding-top: 30px;
+        padding-left: 5px;
+    }
+    #navbar header,
+    #main-doc header {
+        margin: 1px;
+    }
+}
+
+@media (max-width: 1014px) {
+    html, body {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #header-child {
+text-align: center;
+    }
+    #navbar {
+        float: none;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        height:auto;
+        border: 1px solid rgb(92, 89, 89);
+        border-width: 1px 0 1px 0;
+    }
+    #navbar li {
+        display: inline-block;
+        padding: 2px 20px;
+        width: 10%;
+    }
+    #navbar header {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+    #navbar header,
+    #main-doc header {
+        margin: 1px;
+    }
+    #main-doc {
+        float:none;
+        margin: 0 auto;
+    }
+    
+}
