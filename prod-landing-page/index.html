@@ -6,27 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="title">Product Landing Page</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script">
+    <script src="https://kit.fontawesome.com/50439d0e91.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header id="header">
-        <h1></h1>
-        <p id="header-child"></p>
-        <nav id="navbar">
-            <header> </header>
+        <div id="header-title">
+            <i class="fa-solid fa-house-chimney-user"></i>
+            <h1>Home Store</h1>
+            <p id="header-child">The store for all things at home.</p>
+        </div>
+        <nav id="nav-bar">
             <ul>
-
+                <li><a href="#Chairs" class="nav-link">Chairs</a></li>
+                <li><a href="#Couches" class="nav-link">Couches</a></li>
+                <li><a href="#Lights" class="nav-link">Lights</a></li>
             </ul>
         </nav>
+        <img src="images/decor_couch.jpg" alt="image of decorated couch" id="header-img">
+
     </header>
     <main id="main-doc">
- 
-
+        <div class="products">
+            <h2>The Latest Trends</h2>
+            <div class="products-img">
+                <div class="product-grp">
+                    <img src="images/black_chair.jpg"  id="Chairs" alt="black chair" class="product product1">
+                    <h4>Chairs</h4>
+                </div>
+                <div class="product-grp">
+                    <img src="images/green_couch.jpg" alt="green couch"  id="Couches" class="product product2">
+                    <h4>Couches</h4>
+                </div>
+                <div class="product-grp">
+                    <img src="images/white_light2.jpg" alt="white light" id="Lights" class="product product3">
+                    <h4>Lights</h4>
+                </div>
+            </div>
+        </div>
+        <div id="Newsletter">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <h3>&nbsp Get 15% Off Your Purchase &nbsp</h3>
+                <input name="email" type="email" id="email" placeholder="  example@email.com" required>
+                <input id="submit" type="submit" value="Go" class="btn">
+            </form>
+        </div>
     </main>
-    
+
 </body>
-<footer> 
+<footer>
+    <p>All images, fonts, and text descriptions are for learning purposes only.</p>
 </footer>
 
 </html>

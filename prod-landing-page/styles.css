@@ -1,0 +1,189 @@
+:root {
+    --light-blue: rgb(88, 193, 207);
+    --dark-blue: rgb(25, 118, 131);
+}
+
+body {
+    width: 70%;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    font-family: Nanum Pen Script, sans-serif;
+    color: var(--dark-blue)
+}
+
+h1 {
+    font-size: 48px;    
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4,
+p,
+a {
+    font-family: Rubik, sans-serif;
+}
+
+/* header */
+
+#header-title, #nav-bar {
+    position: sticky;
+    top: 0;
+}
+#header-title {
+    float: left;
+    width: 80%;
+}
+
+h1,
+i,
+#header-child {
+    display: inline;
+}
+
+i {
+    font-size: 28px;
+    color: var(--dark-blue)
+}
+
+#header-child {
+    font-size: 14px
+}
+
+#nav-bar {
+    float: right;
+    padding-top: 30px;
+}
+
+ul {
+    padding: 0;
+    margin: 0 auto;
+}
+
+#header-img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 50%;
+    border: 2px solid var(--dark-blue);
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 10px 0 0;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 18px;
+}
+
+a:hover {
+    color: var(--light-blue);
+    text-shadow: 1px 0 var(--dark-blue);
+}
+
+/* main */
+
+.products {
+    margin: 10px auto;
+}
+
+h2,
+.product-grp h4 {
+    text-align: center;
+    margin: 0 auto;
+}
+.product-grp:hover {
+    color: var(--light-blue);
+}
+.products-img {
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border: .5px solid var(--light-blue);
+    border-radius: 50%;
+    margin: 0 50px;
+    flex-direction: row;
+}
+
+.product:hover {
+    border: 1px solid var(--dark-blue);
+
+}
+.product1, .product2{
+object-position: 50% 100%;
+}
+
+.product3 {
+object-position: 0 0;
+}
+
+
+
+/* newsletter */
+#form {
+width: 100%;
+display: flex;
+justify-content: center;
+margin: 30px auto;
+background-color:rgb(219, 235, 236);
+}
+
+#form h3 {
+    padding-right: 15px;
+    text-decoration: underline;
+}
+#email, #submit {
+    border: 1px solid var(--dark-blue);
+    color: var(--light-blue);
+    align-self: center;
+    margin: 0 2.5px;
+
+}
+
+#email {
+    height: 35px;
+    font-size: 14px;
+}
+
+#submit {
+    font-family: Nanum Pen Script, sans-serif;
+    height: 50px;
+    width: 50px;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+#submit:hover {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+}
+
+@media only screen and (max-width: 1000px) {
+    .products-img {
+        display: block;
+        margin: 0 auto;
+    }
+.product-grp, h4, .product {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
