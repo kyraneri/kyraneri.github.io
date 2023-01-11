@@ -1,25 +1,71 @@
 :root {
-    --light-blue: rgb(88, 193, 207);
-    --dark-blue: rgb(25, 118, 131);
+    --light-blue: #C7F1FF;
+    --dark-blue: #21405B;
+    --green: #3A5D43;
+    --pink: #BEA2C2;
 }
 
-h1, h2, h3, h4 {
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    font-size: 28px;
+    padding: 5px;
+}
+
+h1,
+h2,
+h3,
+h4 {
     color: var(--dark-blue);
-    font-family: Lobster Two,  sans-serif;
+    font-family: Lobster Two, sans-serif;
 }
 
-p, a {
+p,
+a {
     font-family: Dosis, sans-serif;
 }
 
 /* header */
+#header {
+    position: relative;
+    background-color: var(--light-blue);
+}
+
+.header-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.header-svg {
+    position: relative;
+    display: block;
+    width: calc(135% + 1.3px);
+    height: 135px;
+}
+
+.header-shape-fill {
+    fill: #FFFFFF;
+}
 
 #navbar {
-    position:fixed;
+    position: fixed;
     top: 0;
-    width: 100vw;
-    padding-top: 30px;
-    background-color: var(--dark-blue);
+    width: 100%;
+    padding: 15px;
+    background-color: var(--light-blue);
+    z-index: 1;
 }
 
 ul {
@@ -43,18 +89,18 @@ a {
 }
 
 a:hover {
-    color: var(--light-blue);
+    color: var(--green);
     text-shadow: 1px 0 var(--dark-blue);
 }
 
 #header-intro {
     padding-top: 35px;
     margin-top: 15px;
-    background-color: var(--light-blue);
 }
 
 
-#header-title, #header-child{
+#header-title,
+#header-child {
     text-align: center;
 }
 
@@ -63,11 +109,36 @@ a:hover {
 }
 
 /* main */
+
+#welcome-section {
+    display: flex;
+    max-width: 40vw;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.welcome {
+    flex: 1;
+    border: 3px solid var(--dark-blue);
+    border-radius: 15%;
+}
+
+#welcome-text {
+    transform: translateY(-70px);
+}
+
+#socials {
+    transform: translateX(-45px);
+    background-color: #FFFFFF;
+}
+
 #projects {
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 5px;
+    grid-gap: 15px;
 }
+
 .project-tile {
     width: 60vw;
     border: 2px solid white;
@@ -77,24 +148,49 @@ a:hover {
     border: 2px solid var(--dark-blue);
 }
 
+.project-desc {
+    border-left: 3px solid var(--pink);
+}
 
-@media only screen and (min-width: 1001px) {
-body {
-    width: 90%;
+#submit {
+    width: 120px;
+    height: 60px;
+    background-color: var(--pink);
+    border: none;
+    border-radius: 10%;
     margin: 0 auto;
 }
 
-#header-intro {
-    height: 40vh;
+#submit:hover {
+    background-color: var(--dark-blue);
+    color: white;
+    cursor: pointer;
 }
 
-#projects a {
-margin-top: 55px;
+/* footer */
+footer {
+    background-color: var(--pink);
+    height: 60px;
 }
-#projects p {
-    margin-top: 155px;
+
+
+@media only screen and (min-width: 1001px) {
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #header-intro {
+        height: 40vh;
+    }
+
+    .project-desc {
+        padding-top: 15vh;
+        padding-left: 1vw;
+        margin-left: 1vw;
     }
 }
+
 @media only screen and (max-width: 1000px) {
     #header-intro {
         height: 30vh;
