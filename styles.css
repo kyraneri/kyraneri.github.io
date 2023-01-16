@@ -31,6 +31,7 @@ h4 {
 h2 {
     font-size: 28px;
     padding: 5px;
+    margin: 0;
 }
 p,
 a {
@@ -151,6 +152,11 @@ a:hover {
 }
 
 /* main */
+#portfolio {
+    padding-top: 50px;
+    transform: translateY(-90px);
+    z-index: 5;
+}
 #projects:not(h2) {
     display: grid;
     grid-template-columns: auto auto;
@@ -174,8 +180,8 @@ a:hover {
     width: 140px;
     height: 50px;
     background-color: var(--pink);
-    border: none;
-    border-radius: 30%;
+    border: 0;
+    border-radius: 100px;
     margin: 0 auto;
 }
 
@@ -185,6 +191,10 @@ a:hover {
     cursor: pointer;
 }
 
+#work {
+    transform: translateY(-40px);
+    z-index: 5;
+}
 #resume {
 padding: 10px;
 }
@@ -236,7 +246,7 @@ font-size: 20px;
 /* footer */
 footer {
     background-color: var(--pink);
-    height: 60px;
+    height: 50px;
 }
 
 
