@@ -4,7 +4,7 @@
     --green: #3A5D43;
     --pink: #BEA2C2;
 }
- 
+
 html {
     scroll-behavior: smooth;
 }
@@ -25,12 +25,22 @@ h2,
 h3,
 h4 {
     color: var(--dark-blue);
-    font-family: Lobster Two, sans-serif;
+    font-family: Shadows Into Light Two, sans-serif;
+    letter-spacing: 1px;
 }
-
+h2 {
+    font-size: 28px;
+    padding: 5px;
+}
 p,
 a {
     font-family: Dosis, sans-serif;
+    font-size: 18px;
+}
+
+#bold {
+    font-weight: bold;
+    font-size: 20;
 }
 
 /* header */
@@ -93,8 +103,10 @@ a:hover {
     text-shadow: 1px 0 var(--dark-blue);
 }
 
+
 #header-intro {
     padding-top: 35px;
+    padding-left: 35px;
     margin-top: 15px;
 }
 
@@ -108,32 +120,38 @@ a:hover {
     padding-top: 80px;
 }
 
-/* main */
+
 
 #welcome-section {
     display: flex;
-    max-width: 40vw;
+    max-width: 50vw;
+    min-width: 35vw;
     text-align: center;
-    margin: 0 auto;
     padding: 5%;
+    margin-top: 3vh;
+
 }
 
 .welcome {
-    flex: 1;
     border: 3px solid var(--dark-blue);
     border-radius: 15%;
-}
-
-#welcome-text {
-    transform: translateY(-70px);
-}
-
-#socials {
-    transform: translateX(-45px);
     background-color: #FFFFFF;
 }
 
-#projects {
+#welcome-text {
+    flex: 2;
+    transform: translateY(-70px);
+    padding: 3vw;
+}
+
+#socials {
+    flex: 1;
+    transform: translateX(-45px);
+    max-height: 180px;
+}
+
+/* main */
+#projects:not(h2) {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 15px;
@@ -153,11 +171,11 @@ a:hover {
 }
 
 #submit {
-    width: 120px;
-    height: 60px;
+    width: 140px;
+    height: 50px;
     background-color: var(--pink);
     border: none;
-    border-radius: 10%;
+    border-radius: 30%;
     margin: 0 auto;
 }
 
@@ -167,6 +185,54 @@ a:hover {
     cursor: pointer;
 }
 
+#resume {
+padding: 10px;
+}
+.resume-accordian {
+    position: relative;
+    padding: 15px;
+    border: none;
+    background-color: inherit;
+    border-bottom: 2px solid var(--pink);
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.job {
+    float: left;
+}
+.time {
+    float: right;
+    padding-right: 25px;
+}
+
+.resume-accordian i{
+    position: absolute;
+    right: 0;
+    padding: 0;
+    margin-right: 10px;
+font-size: 20px;
+
+ }
+
+
+.active,
+.resume-accordian:hover {
+    background-color: var(--dark-blue);
+    color: white;
+    cursor: pointer;
+}
+
+.details {
+    clear: both;
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-in-out;
+    width: 90%;
+    margin: 0 auto;
+}
+
 /* footer */
 footer {
     background-color: var(--pink);
@@ -174,14 +240,26 @@ footer {
 }
 
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1301px) {
+    #header-text {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 65vh;
+    }
+
     main {
         width: 90%;
         margin: 0 auto;
     }
 
     #header-intro {
-        height: 40vh;
+        height: 30vh;
+        padding-bottom: 15vh;
+    }
+
+    #welcome-section {
+        padding-top: 12vh;
     }
 
     .project-desc {
@@ -191,8 +269,35 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1300px) {
+    #header-text {
+        flex: none;
+        height: 85vh;
+    }
+
     #header-intro {
         height: 30vh;
+    }
+
+    #welcome-section {
+        margin: 0 auto;
+    }
+
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #projects {
+        padding-left: 1vw;
+    }
+
+    .project-desc {
+        padding-top: 7vh;
+        padding-left: 2vw;
+    }
+
+    #socials {
+        transform: translateX(-25px);
     }
 }
