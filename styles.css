@@ -28,6 +28,9 @@ h4 {
     font-family: Shadows Into Light Two, sans-serif;
     letter-spacing: 1px;
 }
+h1 {
+    font-size: 36px;
+}
 h2 {
     font-size: 28px;
     padding: 5px;
@@ -111,17 +114,24 @@ a:hover {
     margin-top: 15px;
 }
 
-
 #header-title,
 #header-child {
     text-align: center;
+    margin: 15px;
 }
 
-#header-title {
-    padding-top: 80px;
+#download {
+    padding: 10px;
+    background-color: var(--pink);
+    border: 0;
+    border-radius: 100px;
 }
 
-
+#download:hover {
+    background-color: var(--dark-blue);
+    color: white;
+    cursor: pointer;
+}
 
 #welcome-section {
     display: flex;
@@ -264,7 +274,6 @@ footer {
     }
 
     #header-intro {
-        height: 30vh;
         padding-bottom: 15vh;
     }
 
@@ -285,9 +294,13 @@ footer {
         height: 85vh;
     }
 
-    #header-intro {
-        height: 30vh;
+    #header-title {
+      padding-top: 5vh;
     }
+    #header-child:last-child {
+        padding-bottom: 6vh;
+    }
+
 
     #welcome-section {
         margin: 0 auto;
