@@ -7,7 +7,7 @@ for (i = 0; i < res.length; i++) {
 
         var details = this.nextElementSibling;
         if (details.style.display === "block") {
-            panel.style.display = "none";
+            details.style.display = "none";
         } else {
             details.style.display = "block";
         }
